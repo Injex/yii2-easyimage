@@ -156,6 +156,24 @@ class EasyImage extends Component
     }
 
     /**
+     * @param $path
+     * @return bool
+     */
+    public function checkFileIsImage($path)
+    {
+        return @is_array(getimagesize($path));
+    }
+
+    /**
+     * @param $path
+     * @return bool
+     */
+    public function checkFileSize($path)
+    {
+        return filesize($path) > 0;
+    }
+
+    /**
      * Performance of image manipulation and save result.
      * @param string $file the path to the original image
      * @param string $newFile path to the resulting image
@@ -299,6 +317,9 @@ class EasyImage extends Component
 
         // Create and caching thumbnail use params
         if (($file = $this->detectPath($file)) === false) {
+            return false;
+        }
+        if ($this->checkFileIsImage($file) || $this->checkFileSize($file)) {
             return false;
         }
         $image = Image::factory($file, $this->driver);
