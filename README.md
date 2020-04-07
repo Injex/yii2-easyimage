@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require axelpal/yii2-easyImage
+php composer.phar require git407/yii2-easyimage
 ```
 
 or add
 
 ```
-"axelpal/yii2-easyImage": "^1.0"
+"git407/yii2-easyimage": "^1.0"
 ```
 
 to the require section of your `composer.json` file.
