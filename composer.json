@@ -1,5 +1,5 @@
 {
-    "name": "axelpal/yii2-easyimage",
+    "name": "git407/yii2-easyimage",
     "description": "Image Component for Yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","image"],
@@ -12,6 +12,10 @@
         {
             "name": "AxelPAL",
             "email": "axelpal@gmail.com"
+        },
+        {
+            "name": "Nep",
+            "email": "nep407@gmail.com"
         }
     ],
     "require": {
