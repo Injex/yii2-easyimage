@@ -319,7 +319,7 @@ class EasyImage extends Component
         if (($file = $this->detectPath($file)) === false) {
             return false;
         }
-        if ($this->checkFileIsImage($file) || $this->checkFileSize($file)) {
+        if (!$this->checkFileIsImage($file) || !$this->checkFileSize($file)) {
             return false;
         }
         $image = Image::factory($file, $this->driver);
