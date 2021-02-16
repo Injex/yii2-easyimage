@@ -12,7 +12,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require git407/yii2-easyimage
+php composer.phar require injex/yii2-easyimage
 ```
 
 or add
