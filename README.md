@@ -18,7 +18,7 @@ php composer.phar require injex/yii2-easyimage
 or add
 
 ```
-"git407/yii2-easyimage": "^1.0"
+"injex/yii2-easyimage": "^1.0"
 ```
 
 to the require section of your `composer.json` file.
